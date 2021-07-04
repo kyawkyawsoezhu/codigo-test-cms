@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Form, Text, useFormState } from 'informed';
+import { Form } from 'informed';
 import VoucherForm from "../components/VoucherForm";
 import { createVoucher } from "../apiRequest/voucher";
 import { useHistory } from 'react-router-dom';

@@ -76,10 +76,10 @@ export default function VoucherForm() {
                     <div className="select">
                         <Select field="isActive" validate={requiredValidate}>
                             <Option value="" disabled>
-                                Active
+                                Is Active?
                             </Option>
-                            <Option value={1}>Yes</Option>
-                            <Option value={0}>No</Option>
+                            <Option value={true}>Yes</Option>
+                            <Option value={false}>No</Option>
                         </Select>
                     </div>
                 </div>

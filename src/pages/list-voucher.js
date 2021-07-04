@@ -10,7 +10,6 @@ export default function ListVoucher() {
 
   useEffect(() => {
     fetchVouchers({ token }).then(({ data }) => {
-      console.log(data);
       setVouchers(data);
     });
   }, [token]);
