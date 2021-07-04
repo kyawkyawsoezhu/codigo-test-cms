@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import useToken from '../hooks/useToken';
 
 export default function NavBar() {
-
   const history = useHistory();
+  let { removeToken } = useToken();
 
   const handleLogout = () => {
-    history.push('/');
+    removeToken();
+    history.push("/login");
   };
+
 
   return (
     <nav className="navbar container">
